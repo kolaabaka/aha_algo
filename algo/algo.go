@@ -59,6 +59,18 @@ func BubbleSort(unsorted []int) []int {
 	return unsorted
 }
 
+// Two guys go to each other, swap less and greater elements and in the end make RYOIKI TENKAI
+//
+// Parameters:
+//   - unsorted: slice of integers to be sorted
+//
+// Returns:
+//   - []int: sorted slice
+//
+// Example:
+//   arr := []int{3, 1, 4, 1, 5}
+//   sorted := BlockSort(arr)
+//   fmt.Println(sorted) // [1 1 3 4 5]
 func QuickSort(unsorted []int) []int {
 	return quickSortHelper(unsorted, 0, len(unsorted)-1)
 }
