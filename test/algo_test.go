@@ -1,7 +1,7 @@
 package algo_test
 
 import (
-	algo "algogo/algo"
+	sort "algogo/algo/sort"
 	"slices"
 	"testing"
 )
@@ -11,7 +11,7 @@ var sorted = []int{1, 1, 2, 3, 3, 4, 4, 5, 9, 9}
 
 func TestBlock(t *testing.T) {
 
-	sortedBlock := algo.BlockSort(unsorted)
+	sortedBlock := sort.BlockSort(unsorted)
 
 	if !slices.Equal(sortedBlock, sorted) {
 		t.Errorf("Doesn`t equal %v and %v", sortedBlock, sorted)
@@ -19,7 +19,7 @@ func TestBlock(t *testing.T) {
 }
 
 func TestBubble(t *testing.T) {
-	sortedBlock := algo.BubbleSort(unsorted)
+	sortedBlock := sort.BubbleSort(unsorted)
 
 	if !slices.Equal(sortedBlock, sorted) {
 		t.Errorf("Doesn`t equal %v and %v", sortedBlock, sorted)
@@ -27,7 +27,7 @@ func TestBubble(t *testing.T) {
 }
 
 func TestQuick(t *testing.T) {
-	sortedBlock := algo.QuickSort(unsorted)
+	sortedBlock := sort.QuickSort(unsorted)
 
 	if !slices.Equal(sortedBlock, sorted) {
 		t.Errorf("Doesn`t equal %v and %v", sortedBlock, sorted)

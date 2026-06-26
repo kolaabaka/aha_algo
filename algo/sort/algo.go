@@ -1,4 +1,4 @@
-package algo
+package sort
 
 // Sort array with block algorithm, count each element and his index,
 // could use with arrays with value more than length array, but not interested
